@@ -1,0 +1,9 @@
+<?php
+//array
+$Arr = array('a','b','c','d');
+//count the array
+$c = count($Arr);
+for($i=0;$i<$c;$i++) {
+    print('第 ' . $i . ' 圈 : ' . $Arr[$i] . '<br>');
+}
+>
