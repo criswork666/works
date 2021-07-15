@@ -1,0 +1,6 @@
+<?php
+$Arr = array('0','1','2');
+foreach($Arr as $key => $value) {
+    print('key=' . $key . ' value=' . $value . '<br>');
+}
+?>
