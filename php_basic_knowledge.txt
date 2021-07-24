@@ -1,0 +1,5 @@
+表單(Form)GET與POST差別：
+GET會將資料透過url請求來傳遞輸入。POST則是透過HTTPpost機制傳遞，一般用戶看不到這個過程
+
+session與cookie的區別：
+session儲存在伺服器，cookie儲存在客戶端
