@@ -1,5 +1,11 @@
-����(Form)GET�PPOST�t�O�G
-GET�|�N��Ƴz�Lurl�ШD�Ӷǻ���J�CPOST�h�O�z�LHTTPpost����ǻ��A�@��Τ�ݤ���o�ӹL�{
+表單(Form)GET與POST差別：
+GET會將資料透過url請求來傳遞輸入。POST則是透過HTTPpost機制傳遞，一般用戶看不到這個過程
 
-session�Pcookie���ϧO�G
-session�x�s�b���A���Acookie�x�s�b�Ȥ��
+session與cookie的區別：
+session儲存在伺服器，cookie儲存在客戶端
+
+預防SQL injection攻擊：
+第一種方法
+在接受資料的參數上加上addslashes()，此函數會在資料前後加上反斜線\，能使單引號失效，以下範例
+$account = addslashes($_POST['account']);
+password = addslashes($_POST['password']);
