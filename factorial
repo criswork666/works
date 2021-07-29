@@ -1,0 +1,16 @@
+<?php
+//防止0
+$sum = 1;
+//輸入變數輸出變數階乘總和
+function factorial($n) {
+    //輸入0結果會得1
+    if($n == 0) {
+        return $sum;
+    } else {
+    for($i=1;$i<=$n;$i++) {
+        $sum = $sum * $i;
+    }
+    return $sum;
+    }
+}
+?>
