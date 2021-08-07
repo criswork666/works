@@ -1,9 +1,0 @@
-$arr = array(4,3,8,9,2,6,7);
-//陣列中第一大數值
-echo max($arr).'<br/>'; 
-function second_largest($arr){
-    $sec_arr = array_diff($arr,array(max($arr)));
-    return max($sec_arr);
-}
-//陣列中第二大數值
-echo second_largest($arr);
