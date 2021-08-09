@@ -1,0 +1,13 @@
+$arr = array(4,3,9,1,2,5,7);
+function bubble_sort($arr) {
+    for($i = 0;$i < count($arr) - 1;$i++) {
+        for($j = 0;$k < count($arr) - 1;$j++) {
+		        if($arr[$j] > $arr[$J + 1]) {
+			          $tmp = $arr[$j + 1];
+			          $arr[$j + 1] = $arr[$j];
+			          $arr[$j] = $tmp;
+		        }
+	      }
+    }
+    return $arr;
+}
