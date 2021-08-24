@@ -1,0 +1,33 @@
+<?php
+/*概率表
+SSR-->1%
+SR -->3%
+R  -->10%
+A  -->17%
+B  -->29%
+C  -->40%
+預設輸入函數為(1,4,14,31,60,100,100)
+*/
+function gashapon($ssr ,$sr ,$r ,$a ,$b ,$c ,$total) {
+    $rand_num = mt_rand(1, $total);
+    if($rand_num == $ssr) {
+        //1
+        return 'SSR reward';
+    } else if ($rand_num <= $sr) {
+        //2~4
+        return 'SR reward';
+    } else if ($rand_num <= $r) {
+        //5~14
+        return 'R reward';
+    } else if ($rand_num <= $a) {
+        //15~31
+        return 'A reward';
+    } else if ($rand_num <= $b) {
+        //32~60
+        return 'B reward';
+    } else if ($rand_num <= $c) {
+        //61~100
+        return 'C reward';
+    }
+}
+?>
