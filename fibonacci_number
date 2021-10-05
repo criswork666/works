@@ -9,6 +9,7 @@ function fibonacci($n) {
     }
 }
 //第N個數字(第一個0不算在內)
+//第10個數字
 $counter = 10;
 for($i=0;$i<=$counter;$i++) {
     echo Fibonacci($i),' ';
